@@ -40,67 +40,24 @@
               </div><!-- /.container-fluid -->
             </nav>
             <div class="col-md-12">
+            {{#each courses}}
             <div class="card">
                 <div class="row">
-                <div class="col-sm-1"><img src="http://placehold.it/150x150" class="img-responsive img-circle card_image "></div>
-                <div class="card_title col-sm-8">Session 1: Resiliency, Developmental Milestones, Nurturing & Parenting Styles</div>
-                <div class="card_time col-sm-2 col-sm-offset-1">3 hours</div>
+                <div class="col-sm-1"><img src="{{image}}" class="card_image img-responsive img-circle"></div>
+                <div class="card_title col-sm-8">{{title}}</div>
+                <div class="card_time col-sm-2 col-sm-offset-1"><img src="images/lock_image.png" class="image_lock">{{time}}</div>
                 </div>
                 <div class="row">
-                <div class="card_description col-sm-8 col-sm-offset-1">
-                    In this section, you will learn about:
-                    <ul>
-                        <li>How the program works, and it's format</li>
-                        <li>What resiliency is, and how to develop it in children</li>
-                        <li>Developmental milestones</li>
-                        <li>Nurturing qualities</li>
-                        <li>Parenting styles</li>
-                    </ul>
-                  </div>
+                        <div class="card_description col-sm-8 col-sm-offset-1">
+                       {{description}}
+                      </div>
+                <div class="row">
                     <div class="card_actions col-sm-2"><button class="btn">Start</button></div>
-                    </div>
-                <div class="row">
-
                 </div>
                     
               </div>
-            <div class="card">
-                <div class="row">
-                <div class="col-sm-1"><img src="http://placehold.it/150x150" class="card_image img-responsive img-circle"></div>
-                <div class="card_title col-sm-8">Session 2: Resiliency, Developmental Milestones, Nurturing & Parenting Styles</div>
-                <div class="card_time col-sm-2 col-sm-offset-1"><img src="images/lock_image.png" class="image_lock">3 hours</div>
                 </div>
-                <div class="row">
-                    </div>
-                <div class="row">
-
-                </div>
-                    
-              </div>
-                <div class="card">
-                <div class="row">
-                <div class="col-sm-1"><img src="http://placehold.it/150x150" class="card_image img-responsive img-circle"></div>
-                <div class="card_title col-sm-8">Session 3: Resiliency, Developmental Milestones, Nurturing & Parenting Styles</div>
-                <div class="card_time col-sm-2 col-sm-offset-1"><img src="images/lock_image.png" class="image_lock">3 hours</div>
-                </div>
-                <div class="row">
-                    </div>
-                <div class="row">
-
-                </div>
-                    
-              </div>
-                <div class="card">
-                <div class="row">
-                <div class="col-sm-1"><img src="http://placehold.it/150x150" class="card_image img-responsive img-circle"></div>
-                <div class="card_title col-sm-8">Session 4: Resiliency, Developmental Milestones, Nurturing & Parenting Styles</div>
-                <div class="card_time col-sm-2 col-sm-offset-1"><img src="images/lock_image.png" class="image_lock">3 hours</div>
-                </div>
-                <div class="row">
-                    </div>
-                <div class="row">
-
-                </div>
+              {{/each}}  
                     
               </div>
             </div>
