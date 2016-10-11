@@ -1,0 +1,283 @@
+* {
+box-sizing: border-box;
+}
+body {
+    
+}
+.home_body {
+    background:url('/images/background_graphic2x.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.home_navbar {
+    display: none;
+}
+.inner_header_large {
+    background:url("../images/HeaderImage.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 130px;
+}
+main {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -200px;
+    margin-top: -15px;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+    border-radius: 4px;
+    margin: 20px;
+    height: 100%;
+}
+.card_image {
+    float: left;
+    margin: 20px 10px 10px 10px;
+}
+.card_title {
+    color: #9B9B9B;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 2em;
+    padding-top: 35px;
+    overflow: none;
+}
+.card_actions {
+    float:right;
+    display:block;
+}
+.card_description {
+     color: #9B9B9B;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+.card_time {
+    font-size: 1em;
+    padding-top: 35px;
+    color: #9B9B9B;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+.image_lock {
+    margin-right: 10px;
+}
+.btn {
+    width: 200px;
+    padding: 20px;
+    background: #263D6B;
+    border-radius: 100px;
+    color: white;
+    margin-top: 120px;
+    border-style: none;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+footer {
+    background-color: #414141;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    bottom:0px;
+    width: 100%;
+}
+.search_bar {
+    max-width: 500px;
+    float:right;
+    margin-right: 20px;
+}
+.spacer {  
+    margin-top: 140px; 
+}
+.headline_div {
+    color: white;
+}
+.home_headline {
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+}
+.post_div {
+    display: none;
+}
+.headline_para{
+    font-size: 1.76em;
+    text-transform: none;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    text-align: right;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h1 {
+    font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+}
+.login_div {
+    border-radius: 16px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+input[type=email], input[type=password], input[type=search] {
+    background: #FFFFFF;
+    border-radius: 100px;
+    font-family: GillSans;
+    font-size: 24px;
+    color: #9B9B9B;
+    margin: 30px 10px 5px 30px;
+    padding: 10px;
+    width: 80%;
+    border-style: none;
+    text-align: center;
+}
+input[type=submit]{
+    width: 60%;
+    padding: 20px;
+    background: #263D6B;
+    border-radius: 100px;
+    color: white;
+    margin: 10% 20% 0%;
+    border-style: none;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+#psu_logo {
+    width: 300px;
+    height: auto;
+}
+.navbar-form {
+    display: none;
+}
+@media(min-width:2000px){
+    h1 {
+        font-size: 4em;
+    }
+}
+@media(max-width:1700px) {
+    .login_div {
+        margin-bottom: 300px;
+    }
+    .card_title {
+        font-size: 1.125em;
+    }
+    .card_description {
+        font-size: .975em;
+    }
+    .card_time {
+        font-size: .75em;
+    }
+    .image_lock {
+       margin-right: 30px;
+    }
+    .card_actions {
+       float: left;
+       margin-bottom: 30px;
+    }
+}
+@media(max-width : 1075px){
+    .home_headline{
+        width: 50%;
+        text-align: right;
+        float: right;
+        font-size: 2em;
+    }
+    input[type=search]{
+        padding: 5px;
+    }
+   .headline_para{
+        clear: both;
+        font-size: 1.8em;
+        float:right;
+        width:50%;
+    }
+     .login_div {
+        clear: both;
+        float:right;
+        width: 50%;
+    }
+    #psu_logo {
+        width: 180px;
+        height: 60px;
+    }
+    #grow_logo {
+        width: 100px;
+    }
+}
+@media(max-width: 770px){
+    header {
+        background-color: #263D6B;
+        padding: 20px;
+    }
+    .login_div {
+        border-radius: 16px;
+        margin-bottom: 60px;
+        width: 100%;
+        background: none;
+      }
+     .post_div {
+        font-size: 1.25em;
+        text-transform: none;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+        text-align: right;
+        color: #263D6B;
+        display: inline-block;
+        text-align: center;
+        background-color: white;
+        width: 100%;
+    }
+    .home_headline {
+        width: 100%;
+        font-size: 2em;
+        text-align: right;
+    }
+     input[type=email], input[type=password] {
+        width: 100%;
+    }
+   
+    .search_bar {
+        display: none;
+    }
+    .btn-search {
+        display: none;
+    }
+    .headline_para {
+        display: none;
+    }
+    .card {
+        box-shadow: none;
+        border-bottom: 1px solid darkgray;
+        padding-bottom: 30px;
+    }
+    .card_image {
+        padding:60px;
+    }
+    .card_title {
+        font-size: 2em;
+        margin-left: 10px;
+    }
+    .card_description {
+        font-size: .975em;
+        margin-left: 10px;
+    }
+    .card_time {
+        font-size: .75em;
+    }
+  
+    .image_lock {
+       margin-right: 30px;
+    }
+    .card_actions {
+       float: left;
+    }
+    .home_navbar {
+        display: block;
+    }
+    .navbar-form {
+        display: block;
+    }
+}
