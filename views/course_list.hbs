@@ -45,22 +45,20 @@
                 <div class="row">
                 <div class="col-sm-1"><img src="{{image}}" class="card_image img-responsive img-circle"></div>
                 <div class="card_title col-sm-8">{{title}}</div>
-                <div class="card_time col-sm-2 col-sm-offset-1"><img src="images/lock_image.png" class="image_lock">{{time}}</div>
+                <div class="card_time col-sm-2 col-sm-offset-1"><img src="images/lock_image.png" class="image_lock {{flag}}">{{time}}</div>
                 </div>
                 <div class="row">
-                        <div class="card_description col-sm-8 col-sm-offset-1">
+                        <div class="card_description {{flag}} col-sm-8 col-sm-offset-1">
                        {{description}}
                       </div>
                 <div class="row">
-                    <div class="card_actions col-sm-2"><button class="btn">Start</button></div>
+                    <div class="card_actions {{flag}} col-sm-2"><button class="btn">Start</button></div>
                 </div>
                     
               </div>
                 </div>
               {{/each}}  
-                    
               </div>
-            </div>
         </main>
         <footer>
             This material is the result of a partnership funded by the Department of Defense between the Office of the Deputy Assistant Secretary of Defense for Military Community and Family Policy and the USDA's National Institute of Food and Agriculture through a grant/cooperative agreement with Penn State University.<br />
