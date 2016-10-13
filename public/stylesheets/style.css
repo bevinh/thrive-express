@@ -59,13 +59,16 @@ main {
     margin-bottom: 30px;
 }
 .card_time {
-    font-size: 1em;
+    font-size: 1.4em;
     padding-top: 35px;
     color: #9B9B9B;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 }
 .image_lock {
     margin-right: 10px;
+}
+.spacer {
+    margin-bottom: 300px;
 }
 .btn {
     width: 200px;
@@ -77,6 +80,7 @@ main {
     border-style: none;
     text-transform: uppercase;
     font-size: 1em;
+    margin-bottom: 30px;
 }
 footer {
     background-color: #414141;
