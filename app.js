@@ -12,6 +12,7 @@ var login = require('./routes/login');
 var signup = require('./routes/signup');
 var course_list = require('./routes/course_list');
 var course_page = require('./routes/course_page');
+var getthere = require('./routes/getthere');
 
 var passport = require('passport');  
 var LocalStrategy = require('passport-local').Strategy;  
@@ -46,6 +47,7 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/login', login);
 app.use('/signup', signup);
+app.use('/getthere', getthere);
 app.use('/course_list', course_list);
 app.use('/course_page', course_page);
 
