@@ -9,9 +9,17 @@ var exphbs  = require('express-handlebars');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var login = require('./routes/login');
+var signup = require('./routes/signup');
 var course_list = require('./routes/course_list');
 var course_page = require('./routes/course_page');
 
+var passport = require('passport');  
+var LocalStrategy = require('passport-local').Strategy;  
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/thrive');
+var flash = require('connect-flash');  
+var session = require('express-session');
+require('./config/passport')(passport);
 
 var app = express();
 
@@ -29,9 +37,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(session({ secret: 'shhsecret' }));  
+app.use(passport.initialize());  
+app.use(passport.session());  
+app.use(flash());
+
 app.use('/', routes);
 app.use('/users', users);
 app.use('/login', login);
+app.use('/signup', signup);
 app.use('/course_list', course_list);
 app.use('/course_page', course_page);
 
